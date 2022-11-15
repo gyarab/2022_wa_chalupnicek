@@ -19,22 +19,40 @@ ul.menu {
 }
 
 .hero-image {
-    background-image: url('./metro.jpg');
     height: 200px;
-    background-position: center;
+    background-position: 50% 60%;
     background-size: cover;
+    padding: 0;
 }
 
+.img-metro {
+    background-image: url('./metro.jpg');
+}
+.img-tramvaj {
+    background-image: url('./tramvaj.jpg');
+}
+
+h1 {
+    color: rgb(250, 250, 250);
+    /* font-size: 60px; */
+    padding-top: 60px;
+}
+
+.overcast {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.8);
+}
 
 .skrtnuty {
     text-decoration:line-through;
 }
 
-img {
-    height: 400px;
-    width: 800px;
-}
-
+/* 
 th, td {
     border: 1px solid black;
+} */
+
+.debug {
+    border: 1px solid red;
 }
