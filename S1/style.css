@@ -42,3 +42,11 @@ h1 {
 .debug {
     border: 1px solid red;
 }
+
+.card h2 {
+   text-align: center; 
+}
+
+h2 {
+    font-size: calc(1.0rem + .9vw)
+}
