@@ -45,10 +45,38 @@
       <p class="skrtnuty mb-5">Tramvaj je kolejové vozidlo nebo vlak tramvajové dráhy, převážně určené pro provoz v městských ulicích. Původně tento název označoval samotnou kolejovou dráhu, metonymickým přenosem změnil význam na označení kolejového vozidla městské hromadné dopravy. Pochází z anglického slova tramway (tram označovalo trám, kolej nebo důlní vozík, way cestu), které se zpočátku užívalo u důlních a průmyslových železnic. Označení tram pro kolej pravděpodobně vzniklo v saských dolech, kde se na podlahy štol a chodeb kladly trámy pro usnadnění přepravy důlních vozíků. Do trámů byla posléze vyhloubena drážka a vozíky byly opatřeny kolíkem klouzajícím v drážce pro bezpečné vedení po trati, čímž vznikl jeden z předchůdců železnice. Název se ustálil již v době koněspřežného provozu, přenesl se však i na parní či jinou trakci a v dnešní době je spojen v první řadě s elektrickou trakcí s vrchním trolejovým vedením. </p>
       
       <h2>Profil</h2>
-      <form action="">
-        Jmeno: <input type="text" name="jmeno" value=""><br>
-        Podminky: <input type="checkbox" name="terms" value=""><br>
+      <form action="" method="GET">
+        <div class="form-floating mb-1">
+
+          <input id="idjmeno"  class="form-control"  type="text" name="jmeno" value=""><br>
+          <label for="idjmeno"> Jmeno: </label>
+        </div>
+        
+        Podminky: 
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" name="terms" value="" id="termcheck">
+          <label class="form-check-label" for="termcheck"> souhlasím</label><br>
+        </div>
+
+
+        Povolání: <br>
+        
+        <input type="radio" name="job" id="opt-prg" value="PRG">
+        <label for="opt-prg">programátor</label>  <br>
+        
+        <input type="radio" name="job" id="opt-nprg" value="NPRG">
+        <label for="opt-nprg">neprogramátor</label> <br>
+
+        Nástroj:
+        <select name="tool" id="">
+          <option value="pickaxe">Krumpáč</option>
+          <option value="shovel">Lopata</option>
+        </select> <br>
+
+        <textarea name="remark" id="" cols="30" rows="10">váš názor</textarea> <br>
+
         Obrazek: <input type="file" name="image" value=""><br>
+
         <input type="submit" value="SEND">
       </form>
       
