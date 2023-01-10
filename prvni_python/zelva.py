@@ -1,12 +1,19 @@
-from turtle import exitonclick
-from turtle import forward, left, goto
-from turtle import penup, pendown
-from math import sqrt
 
+from turtle import forward, right, left
+from turtle import exitonclick, shape, goto, penup, pendown
+from math import sqrt
+#from random import randint
+import random
+
+
+shape('turtle')
+penup()
+goto(-400,0)
+pendown()
 
 def draw_house(a):
-    c = round(sqrt(2*a**2))
-    
+    c = sqrt(2*a**2)
+
     # obvodove steny
     forward(a)
     left(90)
@@ -15,31 +22,25 @@ def draw_house(a):
     forward(a)
     left(90)
     forward(a)
-    
-    # pricka ve stene
+
+    # pricka
     left(90+45)
     forward(c)
-    left(90)
 
     # strecha - TODO komin
-    forward(c/2)
     left(90)
     forward(c/2)
     left(90)
+    forward(c/2)
 
-    # druha pricka ve stene
+    # pricka
+    left(90)
     forward(c)
     left(45)
 
-# posunout zacatek doleva
-penup()
-goto(-400, 0)
-pendown()
 
-# generovat domecky - TODO nahodne velikosti
-draw_house(100)
-draw_house(20)
-draw_house(60)
-draw_house(80)
+for i in range(10):
+    draw_house(random.randint(50, 150))
 
 exitonclick()
+
